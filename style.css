@@ -1,0 +1,179 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+:root {
+  --background: #000;
+  --background-blue: #2941ab;
+
+  --white-font: #fff;
+  --green: #1ed760;
+  --gray: #919496;
+}
+
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+header {
+  background-color: var(--background);
+  width: 100%;
+  height: 5rem;
+  padding: 0 6.5rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-spotify {
+  width: 13rem;
+  margin-left: -2rem;
+}
+
+ul {
+  display: flex;
+  gap: 2rem;
+}
+
+a {
+  color: var(--white-font);
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 15px;
+  display: block;
+}
+
+a:hover {
+  color: var(--green);
+}
+
+main {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  padding-top: 10rem;
+
+  background-color: var(--background-blue);
+  background-image: url(https://www-growth.scdn.co/static/home/bursts.svg);
+  background-size: 175%;
+  background-position: 46% 4%;
+
+  -webkit-box-pack: center;
+  justify-content: center;
+}
+
+.title {
+  font-size: 8rem;
+  font-weight: bold;
+
+  color: var(--green);
+
+  text-align: center;
+  padding-bottom: 2.5rem;
+}
+
+.subtitle {
+  font-size: 17px;
+  font-weight: 400;
+
+  color: var(--green);
+
+  line-height: 24px;
+  margin-top: 0;
+}
+
+button {
+  font-size: 14px;
+  font-weight: bold;
+
+  color: var(--background-blue);
+  background-color: var(--green);
+
+  border: none;
+  border-radius: 999px;
+
+  display: block;
+
+  padding: 14px 32px;
+  margin-top: 2rem;
+  margin-bottom: 12rem;
+
+  cursor: pointer;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+#container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+footer {
+  background-color: var(--background);
+  color: white;
+
+  padding: 8rem 6.5rem;
+
+  height: 35rem;
+}
+
+#logo-spotify-footer {
+  margin-top: -3rem;
+}
+
+.title-footer {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--gray);
+
+  padding: 25px 0 15px;
+  margin-top: -2rem;
+
+  line-height: 1.4;
+  letter-spacing: 0.08em;
+}
+
+.nav-footer a {
+  font-size: 1rem;
+  font-weight: 400;
+
+  padding: 0.8rem 0;
+  line-height: 1.5;
+}
+
+.links-footer {
+  font-size: 12px;
+  color: var(--gray);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-top: 5rem;
+}
+
+.links-footer-nav {
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--gray);
+
+  display: -webkit-inline-box;
+  gap: 3rem;
+}
+
+.menu {
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--gray);
+}
