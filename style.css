@@ -31,6 +31,15 @@ header {
   align-items: center;
 }
 
+/* ====== Toggle Menu ====== 
+-> Troca dos botões
+*/
+.toggle {
+  color: var(--white-font);
+  font-size: 2rem;
+  cursor: pointer;
+}
+
 .logo-spotify {
   width: 13rem;
   margin-left: -2rem;
@@ -45,7 +54,7 @@ a {
   color: var(--white-font);
   text-decoration: none;
   font-weight: bold;
-  font-size: 15px;
+  font-size: 0.9375rem;
   display: block;
 }
 
@@ -82,17 +91,17 @@ main {
 }
 
 .subtitle {
-  font-size: 17px;
+  font-size: 1.0625rem;
   font-weight: 400;
 
   color: var(--green);
 
-  line-height: 24px;
+  line-height: 1.5rem;
   margin-top: 0;
 }
 
 button {
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: bold;
 
   color: var(--background-blue);
@@ -103,7 +112,7 @@ button {
 
   display: block;
 
-  padding: 14px 32px;
+  padding: 0.875rem 2rem;
   margin-top: 2rem;
   margin-bottom: 12rem;
 
@@ -133,11 +142,11 @@ footer {
 }
 
 .title-footer {
-  font-size: 12px;
+  font-size: 0.75rem;
   font-weight: 700;
   color: var(--gray);
 
-  padding: 25px 0 15px;
+  padding: 1.5625rem 0 0.9375rem;
   margin-top: -2rem;
 
   line-height: 1.4;
@@ -153,7 +162,7 @@ footer {
 }
 
 .links-footer {
-  font-size: 12px;
+  font-size: 0.75rem;
   color: var(--gray);
 
   display: flex;
@@ -164,7 +173,7 @@ footer {
 }
 
 .links-footer-nav {
-  font-size: 12px;
+  font-size: 0.75rem;
   font-weight: 400;
   color: var(--gray);
 
@@ -173,7 +182,7 @@ footer {
 }
 
 .menu {
-  font-size: 12px;
+  font-size: 0.75rem;
   font-weight: 400;
   color: var(--gray);
 }
