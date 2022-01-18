@@ -186,3 +186,20 @@ footer {
   font-weight: 400;
   color: var(--gray);
 }
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (max-width: 576px) {
+  header {
+    background: red;
+  }
+
+  footer {
+    height: 75rem;
+  }
+
+  #container {
+    display: grid;
+    grid-template-columns: 3fr;
+    gap: 4rem;
+  }
+}
