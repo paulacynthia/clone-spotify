@@ -31,15 +31,6 @@ header {
   align-items: center;
 }
 
-/* ====== Toggle Menu ====== 
--> Troca dos botões
-*/
-.toggle {
-  color: var(--white-font);
-  font-size: 2rem;
-  cursor: pointer;
-}
-
 .logo-spotify {
   width: 13rem;
   margin-left: -2rem;
@@ -56,6 +47,13 @@ a {
   font-weight: bold;
   font-size: 0.9375rem;
   display: block;
+}
+
+a.menu {
+  margin-bottom: 1rem;
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: var(--gray);
 }
 
 a:hover {
@@ -108,7 +106,7 @@ button {
   background-color: var(--green);
 
   border: none;
-  border-radius: 999px;
+  border-radius: 999rem;
 
   display: block;
 
@@ -181,25 +179,7 @@ footer {
   gap: 3rem;
 }
 
-.menu {
-  font-size: 0.75rem;
-  font-weight: 400;
-  color: var(--gray);
-}
-
-/* Small devices (landscape phones, 576px and up)*/
-@media (max-width: 576px) {
-  header {
-    background: red;
-  }
-
-  footer {
-    height: 75rem;
-  }
-
-  #container {
-    display: grid;
-    grid-template-columns: 3fr;
-    gap: 4rem;
-  }
+.icon-menu {
+  opacity: 0;
+  visibility: hidden;
 }

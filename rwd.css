@@ -1,0 +1,67 @@
+@media (min-width: 0px) and (max-width: 350px) {
+  main {
+    background-image: none !important;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (max-width: 576px) {
+  header {
+    padding: 0;
+  }
+
+  .logo-header {
+    margin: 0;
+  }
+
+  ul {
+    display: none;
+  }
+
+  .icon-menu {
+    opacity: 1;
+    visibility: visible;
+    font-size: 2rem;
+    font-weight: 400;
+    margin-left: 4rem;
+    color: var(--white-font);
+    cursor: pointer;
+  }
+
+  main {
+    background-image: url("https://www-growth.scdn.co/static/home/bursts-mobile.svg");
+    background-position: top 52% left 60%;
+  }
+
+  .title {
+    font-size: 3rem;
+  }
+
+  .subtitle {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  #container {
+    display: grid;
+    grid-template-columns: 3fr;
+    gap: 4rem;
+  }
+
+  footer {
+    height: 75rem;
+    padding: 8rem 3rem;
+  }
+
+  .links-footer {
+    margin-top: 3rem;
+  }
+
+  .links-footer-nav {
+    display: inline-block;
+  }
+
+  .final-footer {
+    margin-top: -7rem;
+  }
+}
