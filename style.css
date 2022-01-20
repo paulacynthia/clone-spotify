@@ -39,6 +39,8 @@ header {
 ul {
   display: flex;
   gap: 2rem;
+
+  list-style: none;
 }
 
 a {
@@ -47,6 +49,7 @@ a {
   font-weight: bold;
   font-size: 0.9375rem;
   display: block;
+  list-style: none;
 }
 
 a.menu {
@@ -71,6 +74,7 @@ main {
 
   background-color: var(--background-blue);
   background-image: url(https://www-growth.scdn.co/static/home/bursts.svg);
+  background-repeat: no-repeat;
   background-size: 175%;
   background-position: 46% 4%;
 

@@ -65,3 +65,59 @@
     margin-top: -7rem;
   }
 }
+
+/* Telefones em paisagem a tablet em retrato */
+@media (min-width: 577px) and (max-width: 900px) {
+  ul {
+    display: none;
+  }
+
+  .icon-menu {
+    opacity: 1;
+    visibility: visible;
+    font-size: 2rem;
+    font-weight: 400;
+    margin-left: 4rem;
+    color: var(--white-font);
+    cursor: pointer;
+  }
+
+  .title {
+    font-size: 4.5rem;
+    padding-bottom: 0;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+    padding: 2rem;
+  }
+
+  main {
+    background-image: url("https://www-growth.scdn.co/static/home/bursts-mobile.svg");
+    background-size: 219%;
+    background-position: right 40% center;
+  }
+
+  #container {
+    display: grid;
+    grid-template-columns: 3fr;
+    gap: 4rem;
+  }
+
+  footer {
+    height: 75rem;
+    padding: 8rem 3rem;
+  }
+
+  .links-footer {
+    margin-top: 3rem;
+  }
+
+  .links-footer-nav {
+    display: inline-block;
+  }
+
+  .final-footer {
+    margin-top: -7rem;
+  }
+}
