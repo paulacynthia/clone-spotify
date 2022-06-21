@@ -1,3 +1,4 @@
+/********** INITIAL *********/
 * {
   margin: 0;
   padding: 0;
@@ -20,6 +21,8 @@ body {
   overflow-x: hidden;
 }
 
+/********** HEADER *********/
+
 header {
   background-color: var(--background);
   width: 100%;
@@ -31,14 +34,37 @@ header {
   align-items: center;
 }
 
-.logo-spotify {
+.logo-spotify-header {
   width: 13rem;
   margin-left: -2rem;
+}
+
+/********** MENU *********/
+
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+.icon-menu {
+  display: none;
+  visibility: hidden;
+  position: relative;
+  z-index: 1;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.menu.active {
+  right: 0;
+  transition: all 0.5s;
 }
 
 ul {
   display: flex;
   gap: 2rem;
+  align-items: center;
 
   list-style: none;
 }
@@ -52,7 +78,7 @@ a {
   list-style: none;
 }
 
-a.menu {
+a.menu-footer {
   margin-bottom: 1rem;
   font-size: 0.75rem;
   font-weight: 400;
@@ -75,7 +101,7 @@ main {
   background-color: var(--background-blue);
   background-image: url(https://www-growth.scdn.co/static/home/bursts.svg);
   background-repeat: no-repeat;
-  background-size: 175%;
+  background-size: 220%;
   background-position: 46% 4%;
 
   -webkit-box-pack: center;
@@ -95,8 +121,9 @@ main {
 .subtitle {
   font-size: 1.0625rem;
   font-weight: 400;
-
+  max-width: 80%;
   color: var(--green);
+  text-align: center;
 
   line-height: 1.5rem;
   margin-top: 0;
@@ -183,7 +210,13 @@ footer {
   gap: 3rem;
 }
 
-.icon-menu {
+.separator {
+  height: 15px;
+  border-right: 1px solid var(--white-font);
+}
+
+.separator-mobile {
+  display: none;
   opacity: 0;
   visibility: hidden;
 }

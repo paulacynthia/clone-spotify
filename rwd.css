@@ -1,3 +1,12 @@
+:root {
+  --background: #000;
+  --background-blue: #2941ab;
+
+  --white-font: #fff;
+  --green: #1ed760;
+  --gray: #919496;
+}
+
 @media (min-width: 0px) and (max-width: 350px) {
   main {
     background-image: none !important;
@@ -7,11 +16,12 @@
 /* Small devices (landscape phones, 576px and up)*/
 @media (max-width: 576px) {
   header {
-    padding: 0;
+    padding: 1rem;
+    height: 4rem;
   }
 
-  .logo-header {
-    margin: 0;
+  .logo-spotify-header {
+    width: 11rem;
   }
 
   ul {
@@ -119,5 +129,53 @@
 
   .final-footer {
     margin-top: -7rem;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .icon-menu {
+    display: initial;
+    visibility: visible;
+    color: white;
+  }
+
+  .links {
+    margin: 2rem 0;
+  }
+
+  .links ul {
+    flex-direction: column;
+  }
+
+  .links ul a {
+    margin-right: 0;
+  }
+
+  .menu {
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: -1000px;
+    height: 100vh;
+    background: black;
+    width: 100%;
+    padding: 2rem;
+    transition: all 2s;
+  }
+
+  .menu .links {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-start;
+  }
+
+  .menu-special {
+    font-size: 2rem;
+  }
+
+  .separator {
+    transform: rotate(450deg);
+    margin-left: 10px;
   }
 }

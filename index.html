@@ -27,17 +27,20 @@
 
       <header>
         <img
-          class="logo-spotify logo-header"
+          class="logo-spotify-header"
           src="./assets/logoSpotify.svg"
           alt="Logo do Spotify"
         />
-        <i class="icon-menu"></i>
-        <nav>
-          <ul>
-            <li><a href="#">Premium</a></li>
-            <li><a href="#">Suporte</a></li>
-            <li><a href="#">Baixar</a></li>
-            <li><a>|</a></li>
+        <div class="sideMenu">
+            <i class="icon-menu"></i>
+        </div>
+        <nav class="menu">
+          <ul class="links">
+            <li><a class="menu-special" href="#">Premium</a></li>
+            <li><a class="menu-special" href="#">Suporte</a></li>
+            <li><a class="menu-special" href="#">Baixar</a></li>
+            <li><a class="separator"></a></li>
+            <!-- <li><a class="separator-mobile"></a></li> -->
             <li><a href="#">Inscrever-se</a></li>
             <li><a href="#">Entrar</a></li>
           </ul>
@@ -95,20 +98,21 @@
 
         <div class="links-footer">
          <nav class="links-footer-nav">
-           <a class="menu" href="">Legal</a>
-           <a class="menu" href="">Centro de Privacidade</a>
-           <a class="menu" href="">Política de privacidade</a>
-           <a class="menu" href="">Cookies</a>
-           <a class="menu" href="">Sobre anúncios</a>
+           <a class="menu-footer" href="">Legal</a>
+           <a class="menu-footer" href="">Centro de Privacidade</a>
+           <a class="menu-footer" href="">Política de privacidade</a>
+           <a class="menu-footer" href="">Cookies</a>
+           <a class="menu-footer" href="">Sobre anúncios</a>
          </nav>
 
          <div class="final-footer">
             <p>Brasil</p>
-            <a class="menu" href="">© 2022 Spotify AB</a>
+            <a class="menu-footer" href="">© 2022 Spotify AB</a>
          </div>
        </div>
        
     </footer>
+    <script src="./script.js"></script>
    
   </body>
 </html>
